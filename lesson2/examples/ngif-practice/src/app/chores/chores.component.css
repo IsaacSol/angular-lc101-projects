@@ -16,3 +16,15 @@ img {
     display: block;
     margin: auto;
 }
+
+p {
+    text-align: center;
+}
+
+.rewards {
+    color: green;
+}
+
+h1 {
+    text-align: center;
+}

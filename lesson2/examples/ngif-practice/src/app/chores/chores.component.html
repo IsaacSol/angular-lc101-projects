@@ -12,3 +12,22 @@
     </ul>
 </div>
 <hr>
+<div class="rewards">
+    <div>
+        <img src={{targetImage}} alt="Colorful target with arrow in bulls-eye">
+    </div>
+    <div *ngIf = "chores > finishedChores">
+        <p>Work harder!</p>
+    </div>
+    <ng-template *ngIf = "chores > finishedChores">
+        <p>No allowance yet.</p>
+    </ng-template>
+    <div *ngIf = "chores < 1; else howToEarn">
+        <h1>Ice cream treat!</h1>
+    </div>
+    <ng-template #howToEarn>
+        <h3>To earn an ice cream treat:</h3>
+        <p>The chores list must be empty</p>
+        <p>The Done list must have at least 4 items</p>
+    </ng-template>
+</div>
